@@ -1,0 +1,24 @@
+#electronic dice ucf file for Xilinx Spartan 6 FPGA
+
+#clk 12Mhz
+NET clk LOC = P87 | IOSTANDARD = LVCMOS33;
+ 
+# push button to throw dice
+NET push LOC = P17 | IOSTANDARD = LVCMOS33; 
+
+#developed by Ninad Waingankar	
+
+
+#display on 7 segment 										7 segment
+NET display(6) LOC = P1 | IOSTANDARD = LVCMOS33;		#a
+NET display(5) LOC = P2 | IOSTANDARD = LVCMOS33;		#b
+NET display(4) LOC = P143 | IOSTANDARD = LVCMOS33;		#c
+NET display(3) LOC = P144 | IOSTANDARD = LVCMOS33;		#d
+NET display(2) LOC = P141 | IOSTANDARD = LVCMOS33;		#e
+NET display(1) LOC = P142 | IOSTANDARD = LVCMOS33;		#f
+NET display(0) LOC = P139 | IOSTANDARD = LVCMOS33; 	#g
+
+#binary format output on FPGA LEDs (3 bit showing 1-6 for dice)
+NET random_num(2) loc=p16 | IOSTANDARD = LVCMOS33;
+NET random_num(1) loc=p15 | IOSTANDARD = LVCMOS33;
+NET random_num(0) loc=p12 | IOSTANDARD = LVCMOS33; 
