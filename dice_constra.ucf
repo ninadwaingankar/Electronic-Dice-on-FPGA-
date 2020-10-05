@@ -10,13 +10,13 @@ NET push LOC = P17 | IOSTANDARD = LVCMOS33;
 
 
 #display on 7 segment 										7 segment
-NET display(6) LOC = P1 | IOSTANDARD = LVCMOS33;		#a
-NET display(5) LOC = P2 | IOSTANDARD = LVCMOS33;		#b
-NET display(4) LOC = P143 | IOSTANDARD = LVCMOS33;		#c
-NET display(3) LOC = P144 | IOSTANDARD = LVCMOS33;		#d
-NET display(2) LOC = P141 | IOSTANDARD = LVCMOS33;		#e
-NET display(1) LOC = P142 | IOSTANDARD = LVCMOS33;		#f
-NET display(0) LOC = P139 | IOSTANDARD = LVCMOS33; 	#g
+NET display(6) LOC = P22 | IOSTANDARD = LVCMOS33;		#a
+NET display(5) LOC = P21 | IOSTANDARD = LVCMOS33;		#b
+NET display(4) LOC = P24 | IOSTANDARD = LVCMOS33;		#c
+NET display(3) LOC = P23 | IOSTANDARD = LVCMOS33;		#d
+NET display(2) LOC = P27 | IOSTANDARD = LVCMOS33;		#e
+NET display(1) LOC = P26 | IOSTANDARD = LVCMOS33;		#f
+NET display(0) LOC = P30 | IOSTANDARD = LVCMOS33; 	#g
 
 #binary format output on FPGA LEDs (3 bit showing 1-6 for dice)
 NET random_num(2) loc=p16 | IOSTANDARD = LVCMOS33;
